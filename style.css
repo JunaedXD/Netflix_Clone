@@ -1,0 +1,372 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: border-box;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+}
+
+.container1 {
+  height: 100vh;
+  width: 100%;
+
+  background: linear-gradient(rgba(0, 0, 0, 0.903), rgba(0, 0, 0, 0.766)),
+    url("assets/netflix_background.jpg");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.navbar {
+  height: 90px;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.netflix-logo {
+  background-image: url(assets/Netflix_Logo.png);
+  height: 70px;
+  width: 170px;
+  background-size: cover;
+}
+
+.options-sign-in {
+  display: flex;
+  margin-left: 790px;
+}
+
+.options-sign-in .lang {
+  text-align: center;
+  border: 1px solid white;
+  border-radius: 5px;
+}
+
+.options-sign-in .lang i {
+  color: white;
+}
+
+.options-sign-in .lang select {
+  height: 32px;
+  width: 132px;
+  text-align: center;
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-size: 1rem;
+  font-weight: 500;
+}
+.options-sign-in .sign-in button {
+  text-align: center;
+  height: 32px;
+  width: 77px;
+  margin-left: 10px;
+  background-color: #c11119;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 0.9rem;
+  font-weight: 550;
+}
+
+.title {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+
+  /* Netflix style */
+  max-width: 600px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  color: white;
+  text-align: center;
+  margin-top: 20vh;
+}
+
+.title h1 {
+  font-size: 3rem;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.title h2 {
+  font-size: 1.3rem;
+  margin-bottom: 25px;
+  font-weight: 900;
+}
+
+.title p {
+  font-size: 1rem;
+  margin-bottom: 15px;
+}
+
+.email-box input {
+  height: 50px;
+  width: 366px;
+  /* Blur effect */
+  background: rgba(255, 255, 255, 0.1); /* semi-transparent */
+  backdrop-filter: blur(10px); /* glass blur */
+  -webkit-backdrop-filter: blur(10px); /* Safari support */
+  color: gray;
+  border: none;
+  border-radius: 5px;
+}
+
+.email-box button {
+  height: 50px;
+  width: 210px;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  background-color: #c11119;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-left: 5px;
+}
+
+.container2 {
+  background-color: #000000;
+}
+
+.trending {
+  padding: 40px 20px;
+}
+
+.trending h2 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: white;
+  margin-left: 70px;
+}
+
+.slider {
+  position: relative;
+  overflow: hidden;
+  width: 1100px; /* 4 cards * 220px */
+  margin: auto;
+}
+
+.slider-track {
+  display: flex;
+  gap: 40px;
+  transition: transform 0.5s ease;
+}
+
+.card {
+  position: relative;
+  width: 200px;
+  height: 300px;
+  flex-shrink: 0;
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  object-fit: cover;
+  transition: transform 0.3s;
+}
+
+.card img:hover {
+  transform: scale(1.1);
+}
+
+/* Rank Numbers */
+.rank {
+  position: absolute;
+  bottom: -10px;
+  left: -15px;
+  font-size: 6rem;
+  font-weight: bold;
+  color: #000;
+  -webkit-text-stroke: 2px #fff; /* white stroke around black number */
+  z-index: 1;
+}
+
+/* Arrows */
+.slider button {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 60px;
+  background: rgba(0, 0, 0, 0.4);
+  color: white;
+  border: none;
+  font-size: 3rem;
+  cursor: pointer;
+  z-index: 2;
+  transition: background 0.3s ease, opacity 0.3s ease;
+}
+
+.slider button:hover {
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.slider .prev {
+  left: 0;
+}
+.slider .next {
+  right: 0;
+}
+
+/* Hidden state */
+.hidden {
+  opacity: 0;
+  pointer-events: none; /* unclickable */
+}
+
+.reason-card {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.card2 {
+  height: 300px;
+  width: 250px;
+  background: linear-gradient(120deg, #1a1f3b 0%, #3e1e4b 100%);
+  text-align: center;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.heading {
+  color: white;
+  font-size: 1.5rem;
+}
+
+.text {
+  margin-top: 30px;
+  text-align: left;
+  padding: 0 10px 0 10px;
+}
+
+.text p {
+  margin-top: 20px;
+  color: #8f8f9c;
+}
+
+.faq-container {
+  height: 520px;
+  width: 1360px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.faq {
+  color: white;
+}
+
+.faq h2 {
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+}
+
+.faq-list {
+  max-width: 900px;
+  margin: auto;
+  text-align: left;
+}
+
+.faq-item {
+  border-bottom: 1px solid #333;
+  margin-bottom: 10px;
+}
+
+.faq-question {
+  width: 100%;
+  background: #303030;
+  color: white;
+  padding: 20px;
+  font-size: 1.5rem;
+  border: none;
+  outline: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.faq-question:hover {
+  background: #454545;
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  background: #303030;
+  transition: max-height 0.4s ease;
+}
+
+.faq-answer p {
+  padding: 20px;
+  margin: 0;
+  color: #ddd;
+}
+
+.faq-item.active .faq-answer {
+  max-height: 500px; /* enough space for text */
+}
+
+.faq-item.active .faq-question .icon {
+  transform: rotate(45deg); /* plus turns into × */
+}
+
+.email-container {
+  background-color: black;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+}
+
+.email-container .email-box input {
+  height: 56px;
+  width: 520px;
+  border: 1px solid rgba(255, 255, 255, 0.592);
+  margin-bottom: 50px;
+}
+
+.email-container p{ 
+  margin-bottom: 15px;
+}
+
+.footer-container{  
+  background-color: #000000;
+}
+
+.footer-container p{  
+  margin-left: 167px;
+
+  margin-bottom: 50px;
+}
+
+.footer-container .call{ 
+  color: rgba(255, 255, 255, 0.533);
+ }
+
+.faq-footer{  
+  height: 132px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.faq-footer a{ 
+  display: block;
+  color: rgba(255, 255, 255, 0.578);
+ }
+
+ul{ 
+  display: grid;
+    gap: 10px;
+}
+
+
