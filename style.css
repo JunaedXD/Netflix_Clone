@@ -10,7 +10,7 @@
   width: 100%;
 
   background: linear-gradient(rgba(0, 0, 0, 0.903), rgba(0, 0, 0, 0.766)),
-    url("assets/netflix_background.jpg");
+    url("netflix_background.jpg");
 
   background-size: cover;
   background-position: center;
@@ -26,7 +26,7 @@
 }
 
 .netflix-logo {
-  background-image: url(assets/Netflix_Logo.png);
+  background-image: url(Netflix_Logo.png);
   height: 70px;
   width: 170px;
   background-size: cover;
